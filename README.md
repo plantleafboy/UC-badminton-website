@@ -1,4 +1,4 @@
 # Odin-project
 Odin project layout assignment
 
-A webpage created from the requirements asked of by the Odin project.
+A webpage recreated through the odin project and for the uc badminton club.

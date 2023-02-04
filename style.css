@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    min-height: 100vh;
     display: flex;
     flex-shrink: 0;
     flex-direction: column;
@@ -63,7 +64,6 @@ img {
     padding: 0.4rem 9.125rem;
     background-color: #1F2937;
     height: 7rem;
-
 }
 
 .header-title {
@@ -347,21 +347,41 @@ img.box-img {
     border: 2px solid white;
 } */
 
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 5rem;
-    background-color: #1F2937;
-    font-size: 1rem;
-    color: white
-}
-
 .button-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+
+.other-page-header {
+    color: white;
+    border: 3px solid red;
+    padding: 5px;
+}
+
+.faq-content {
+    color: white;
+    background-color: cadetblue;
+    padding: 16px;
+    border-radius: 2em;
+}
+
+
+
+.footer {
+    order: 5;
+    display: flex;
+    justify-self: end;
+    justify-content: center;
+    align-items: center;
+    min-height: 5rem;
+    background-color: #1F2937;
+    font-size: 1rem;
+    color: white;
+    margin-top: auto;
+}
+
+
 
 /* .button span {
     cursor: pointer;

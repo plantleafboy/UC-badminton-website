@@ -286,65 +286,6 @@ img.box-img {
     padding: 1em;
 }
 
-.author {
-    align-self: flex-end;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.action-section {
-    order: 4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 25rem;
-
-    background-image: url("./images/sky-bg.jpg");
-    
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.action-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 30em;
-    padding: 1em 10em;
-    background-color: royalblue;
-    gap: 2em;
-    border-radius: 25px;
-    opacity: 0.8;
-
-}
-
-.action-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    color: white;
-    font-size: 1.5em;
-    font-weight: bolder;
-}
-
-/* .action-button {
-    background-color: cornflowerblue;
-    border-width: 10px;
-    border-radius: 6px;
-
-    margin-top: 12px;
-    padding: 8px 20px;
-    color: #F9FaF8;
-    font-size: 18px;
-    font-weight: bold;
-    border: 2px solid white;
-} */
-
 .button-container {
     display: flex;
     justify-content: space-evenly;
@@ -363,14 +304,20 @@ img.box-img {
     padding-top: 6rem;
     justify-content: flex-start;
     min-height: 100vh;
+    
 }
 .faq-content {
     color: white;
     background-color: cadetblue;
     padding: 16px;
+    min-width: 10em;
     border-radius: 2em;
+    min-width: 360px;
 }
 
+.to-home-button {
+    text-align: center;
+}
 
 
 .footer {
@@ -414,6 +361,10 @@ img.box-img {
     transform: scaleX(1);
   }
 
+  .faq-button {
+    display:none;   
+  }
+
   @media screen and (max-width: 881px) {
     .header-links {
         display: none;
@@ -438,4 +389,7 @@ img.box-img {
     align-items: center;
     gap: 5px;
 }
+    .faq-button {
+        display:block;
+    };
   }

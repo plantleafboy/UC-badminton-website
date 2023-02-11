@@ -19,11 +19,57 @@
 
     <link rel="icon" href="./images/favicon.png" type="image/png ">
 </head>
-<body>
+<body onload="checkNav()">
+    <script>
+        function checkNav() {
+            let w = window.innerWidth;
+            let navBar = document.getElementById("navBar");
+            if (w < 767) {
+                //alert("on mobile device");
+                navBar.removeAttribute("hidden");
+            } else {
+                navBar.setAttribute("hidden");
+                //alert("on non-mobile device");
+            }
+            // let bar = 'test-test';
+            //alert(bar); -->
+            
+        }
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+
     <div class="header">
         <div class="header-title">
             <img class="header-logo" title="UcanBC logo" alt="UcanBC logo" src="./images/header-logo-ucanbc.jpg">
             <div class="logo-title"> <a class="title-text" href="index.html"> UCanBC </a></div>
+            <div id="mySidenav" class="sidenav">
+                <div class="nav-logo-box">
+                    <a id="side-logo" href="https://www.facebook.com/UCanBC/"><img title="side-facebook" alt="facebook link icon" src="./images/iconmonstr-facebook-1-64.png"> </a>
+                    <a id="side-logo" href="https://www.instagram.com/ucanbc/"><img title="side-instagram" alt="instagram link icon" src="./images/iconmonstr-instagram-11-64.png"></a>
+                </div>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html"> Home </a>
+                <a href="#">Media (in progress)</a>
+                <a href="#">Sign up (in progress)</a>
+                <a  href="https://ucsa.org.nz/clubs/browse/"> Other-clubs </a>
+                <a  href="faq.html"> FAQ! </a>
+                <div>contact us at @ucbclub@gmail.com</div>
+            </div>
+              
+            <!-- Use any element to open the sidenav -->
+            <span hidden id="navBar" class="navOpen" onclick="openNav()" style="cursor: pointer;"> &#9776; </span>
         </div>
         
         <div class="header-links">
@@ -129,6 +175,7 @@
         </div> 
         
         <div class="footer">
+            <div> contact us at @ucbclub@gmail.com || </div>
             <div class="footer-text"> Copyright <span>&#169;</span> UC badminton club.The Odin project</div>
         </div>
     </div>

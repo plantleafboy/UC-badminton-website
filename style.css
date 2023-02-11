@@ -411,6 +411,7 @@ img.box-img {
     padding: 0.2em;
     border-radius: 0.3em;
     max-height: 100vh;
+    display: none;
 }
 #navBar:hover {
     background-color: #97a2bc;
@@ -418,13 +419,17 @@ img.box-img {
 
   /* The side navigation menu */
 .sidenav {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black*/
+    right: 0;
+    /* #97a2bc */
+    background-color: rgb(56, 66, 105); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 50px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -434,8 +439,8 @@ img.box-img {
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 1.5rem;
+    color: white;
     display: block;
     transition: 0.3s;
   }
@@ -457,7 +462,7 @@ img.box-img {
   .sidenav:nth-child(n) {
     /* position: absolute;
     bottom: 0; */
-    color: tomato;
+    color: white;
     text-align: center;
   }
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -498,11 +503,10 @@ img.box-img {
     align-items: center;
     gap: 5px;
     }
-    .faq-button {
-        display:block;
-    };
-    
-    
+   #navBar {
+        display: block;
+    }
+
 }
 @media (hover: none), (pointer: coarse) {
     .navOpen {

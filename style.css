@@ -148,18 +148,6 @@ img {
 
 }
 
-/* .hero-image {
-    display: flex;
-    width: 650px;
-    height: 222px;
-}
-
-img.hero-img-class {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-} */
-
 .text-container {
     display: flex;
     flex-shrink: 1;
@@ -169,7 +157,7 @@ img.hero-img-class {
     color: #F9FaF8;
 
     background-color: #1F2937;
-    
+    margin: 1em;
     padding: 1em;
     border-radius: 25px;
 }
@@ -207,7 +195,6 @@ img.hero-img-class {
 .picture-title {
     font-weight: bolder;
     font-size: 2.2em;
-    margin: 0.5em 0 1em;
     color: black;
 }
 
@@ -219,6 +206,7 @@ img.hero-img-class {
     max-width: 60rem;
     min-width: 321px;
     flex-wrap: wrap;
+    margin-top: 1em;
 }
 
 .display-info {
@@ -266,6 +254,7 @@ img.box-img {
     align-items: center;
     background-color: #E5E7EB;
     min-height: 25rem;
+    padding: 2em;
 }
 
 .filler-container {
@@ -304,11 +293,27 @@ img.box-img {
     padding-top: 6rem;
     justify-content: flex-start;
     min-height: 100vh;
+
+    order: 1;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 9.125rem;
+    /* background-color: #1F2937; */
+
+    background-image: url("./images/UCANBC_2023.png");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 .faq-content {
-    color: white;
-    background-color: cadetblue;
+    
+    background-color: rgba(119, 180, 182, 0.85);
     padding: 16px;
     min-width: 10em;
     border-radius: 2em;
@@ -331,20 +336,21 @@ img.box-img {
 }
 
 .question {
-    color: rgb(255, 234, 71);
+    color: rgba(255, 234, 71, 0.9);
     font-size: 1.5em;
     margin: 0px; margin-bottom:5px;
     font-weight: bold;
     margin-top: 1em;
+    opacity: 1;
 }
 
-  #session-info::before, #membership-info::before {
+  #committee-info::before, #session-info::before, #membership-info::before {
       content: '';
       position: absolute;
       width: 100%;
       height: 4px;
       border-radius: 4px;
-      background-color: #18272F;
+      background-color: plum;
       bottom: 0;
       left: 0;
       transform-origin: right;
@@ -352,7 +358,7 @@ img.box-img {
       transition: transform .3s ease-in-out;
     }
   
-   #session-info:hover::before, #membership-info:hover::before {
+   #committee-info:hover::before, #session-info:hover::before, #membership-info:hover::before {
     transform-origin: left;
     transform: scaleX(1);
   }
@@ -360,9 +366,25 @@ img.box-img {
   .faq-button {
     display:none;   
   }
+  .to-home-button {
+    align-self: center;
+  }
 
+  .faq-text {
+    font-size: 3em;
+    font-weight:bolder;
+    margin: 10px 0 10px;
+  }
   .title-text {
     font-size: 2rem;
+}
+
+.sessiongraphic {
+    border: 5px dotted tomato;
+    border-radius: 2em;
+    max-width: 85vw;
+    object-fit: contain;
+    margin: 2em 1em;
 }
 
 .nav-logo-box {
@@ -467,6 +489,7 @@ img.box-img {
   .header {
     justify-content: center;
     align-items: center;
+    opacity: 90%;
   }
   .button-container {
     display: flex;

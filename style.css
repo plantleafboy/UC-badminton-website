@@ -248,9 +248,15 @@ img.box-img {
     opacity: 0.8;
 }
 
+.bank-num {
+    font-size: large;
+
+}
+
 #session-info {
     color: black;
 }
+
 
 #membership-info {
     align-self: flex-start;
@@ -392,6 +398,7 @@ img.box-img {
 }
 
 .sessiongraphic {
+    position: relative;
     border: 5px dotted tomato;
     border-radius: 2em;
     max-width: 85vw;
@@ -414,7 +421,6 @@ img.box-img {
     margin: 20px 15px;
     
 }
-
 #navBar {
     color: mediumaquamarine;
     font-size: 1.7em;

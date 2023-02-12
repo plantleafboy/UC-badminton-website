@@ -106,7 +106,7 @@ img {
 .logo-link {
     flex-shrink: 1;
     font-size: 1em;
-    max-width: 1.7em;
+    max-width: 1.5em;
     min-width: 1em;  
 
     margin: 5px 15px;
@@ -181,6 +181,16 @@ img {
     flex-shrink: 0;
 }
 
+.committee-container {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 9.125em;
+    margin: 1em 0 1em 0;
+    min-height: 44em;
+}
 
 .picture-info {
     order: 2;
@@ -196,6 +206,7 @@ img {
     font-weight: bolder;
     font-size: 2.2em;
     color: black;
+    text-align: center;
 }
 
 .image-container {
@@ -324,10 +335,11 @@ img.box-img {
 .footer {
     order: 5;
     display: flex;
-    justify-self: end;
-    justify-content: center;
+    gap: 2em;
+    justify-content: space-between;
     align-items: center;
-    min-height: 5rem;
+    height: clamp(4.7rem, 0.1rem, 5rem);
+    min-height: 4rem;
     background-color: #1F2937;
     font-size: 1rem;
     color: white;
@@ -465,10 +477,13 @@ img.box-img {
     color: white;
     text-align: center;
   }
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s;
-    padding: 20px;
+
+  .home-link {
+    padding: 5px 15px;
+    color: tomato;
+  }
+  .home-link:hover {
+    opacity: 60%;
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -478,12 +493,12 @@ img.box-img {
     
   }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
     .header-links {
         display: none;
     }
 
-    .picture-info {
+    .picture-info:not(#committee-page) {
         display: none;
   }
 

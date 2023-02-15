@@ -267,6 +267,8 @@ img.box-img {
 .filler-section {
     order: 3;
     display: flex;
+    flex-direction: column;
+    gap: 1em;
     justify-content: center;
     align-items: center;
     background-color: #E5E7EB;
@@ -423,6 +425,7 @@ img.box-img {
 }
 #navBar {
     color: mediumaquamarine;
+    font-family: "Lucida Console", "Courier New", monospace;
     font-size: 1.7em;
     margin-right: auto;
     background-color: #3d4b5f;
@@ -454,49 +457,55 @@ img.box-img {
   }
   
   /* The navigation menu links */
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: white;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  .sidenav:nth-child(n) {
-    /* position: absolute;
-    bottom: 0; */
-    color: white;
-    text-align: center;
-  }
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 1.5rem;
+color: white;
+display: block;
+transition: 0.3s;
+}
 
-  .home-link {
-    padding: 5px 15px;
-    color: tomato;
-  }
-  .home-link:hover {
-    opacity: 60%;
-  }
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+.sidenav:nth-child(n) {
+/* position: absolute;
+bottom: 0; */
+color: white;
+text-align: center;
+}
+
+.home-link {
+padding: 5px 15px;
+color: tomato;
+}
+.home-link:hover {
+opacity: 60%;
+}
+
+.session-container-mob {
+    display: none;
+}
   
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-    
+.membership-container-mob {
+    display: none;
+}
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+
   }
 
 @media screen and (max-width: 1100px) {
@@ -527,7 +536,20 @@ img.box-img {
    #navBar {
         display: block;
     }
-
+    .membership-container-mob {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .session-container-mob {
+        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+    .sessiongraphic {
+        display: none;
+    }
 }
 @media (hover: none), (pointer: coarse) {
     .navOpen {

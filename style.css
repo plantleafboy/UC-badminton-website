@@ -297,11 +297,17 @@ img.box-img {
     padding: 1em;
 }
 
-.button-container {
+#button-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     gap: 1em;
+}
+
+#session-button {
+    margin: 0 auto;
+    
 }
 
 .other-page-header {

@@ -40,6 +40,30 @@ a {
     border-radius: 1em;
 }
 
+.sign-up-button:hover {
+    background-color: crimson;
+    border-radius: 1em;
+}
+
+.sign-up-button {
+    flex-shrink: 5;
+    max-width: 100%;
+    background-color: red;
+    border-radius: 6px;
+    border-style: none;
+    align-self: flex-start;
+    padding: 8px 20px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    /* border: 2px solid oldlace; */
+
+    transition: all 0.5s;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+}
+
 img {
     flex-shrink: 1;
     max-width: 100%;
@@ -342,7 +366,7 @@ img.box-img {
 }
 .faq-content {
     
-    background-color: rgba(119, 180, 182, 0.85);
+    background-color: rgba(225, 84, 48, 0.95);
     padding: 16px;
     min-width: 10em;
     border-radius: 2em;

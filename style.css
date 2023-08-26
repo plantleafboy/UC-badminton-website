@@ -354,6 +354,7 @@ img.box-img {
     justify-content: center;
     align-items: center;
     padding: 1em 9.125rem;
+    color: white;
     /* background-color: #1F2937; */
 
     background-image: url("./images/UCANBC_2023.png");
@@ -366,14 +367,16 @@ img.box-img {
     
 }
 .faq-content {
-    
-    background-color: rgba(225, 84, 48, 0.95);
+    background-color: #1F2937;
     padding: 16px;
     min-width: 10em;
     border-radius: 2em;
     min-width: 360px;
 }
 
+.p-parent {
+    color: white;
+}
 
 .footer {
     order: 5;

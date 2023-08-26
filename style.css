@@ -28,6 +28,7 @@ a {
   
 .text-link:hover {
     background-color: #97a2bc;
+    transition: 0.5s;
     border-radius: 1em;
 }
 
@@ -151,7 +152,7 @@ img {
     padding: 1em 9.125rem;
     /* background-color: #1F2937; */
 
-    background-image: url("./images/badminton-court-bg.jpg");
+    background-image: url("./images/6_ucanbc.jpg");
 
     /* Set a specific height */
     min-height: 37.5rem;
@@ -183,7 +184,7 @@ img {
     max-width: 30em;
     min-width: 321px;
     color: #F9FaF8;
-
+    opacity: 88%;
     background-color: #1F2937;
     margin: 1em;
     padding: 1em;
@@ -527,7 +528,7 @@ text-align: center;
 
 .home-link {
 padding: 5px 15px;
-color: tomato;
+color: rgb(210, 115, 99);
 }
 .home-link:hover {
 opacity: 60%;

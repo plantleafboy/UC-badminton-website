@@ -17,6 +17,9 @@ body {
     box-sizing: border-box;
 }
 
+.wrapper-gallery {
+    margin:0 20vw;
+}
 span:not(.button-span) {
     color: red;
 }

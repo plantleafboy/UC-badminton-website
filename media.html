@@ -1,8 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="gallery.js" defer></script>
+    <!-- <script defer>
+        function load_home() {
+            document.getElementById("footer-container").innerHTML='object type="text/html" data="footer.html"></object>';
+        }
+        // Function to load an HTML component and insert it into a specified element
+        function includeComponent(componentName, targetElementId) {
+            fetch(componentName)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(targetElementId).innerHTML = data;
+                });
+        }
+    
+        // Include the header, footer, and navbar in your page
+        window.onload = function () {
+            
+            includeComponent('footer.html', 'footer-container');
+            
+        }
+    </script> -->
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8GDCNWDVKC"></script>
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-8GDCNWDVKC"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -39,7 +60,7 @@
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
             document.getElementById("main").style.marginLeft = "250px";
-            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            document.body.style.backgroundColor = "rgba(0,0,0, 0.4)";
         }
         
         /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
@@ -84,35 +105,36 @@
         </div>
     </div>
     
-    <section id="index-gallery" class="wrapper-gallery">
-
-        <p>UCANBC</p>
-        <h2>Gallery</h2>
-        <div class="gallery-img img1">
-            <div><a href="'#'">This is a title</a></div>
+    <section class="carousel-wrapper">
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#60;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#62;</button>
+            <ul data-slides>
+                <li class="slide" data-active>
+                    <img src="./images/1_ucanbc.jpg" alt="university of canterbury hall"
+                </li>
+                <li class="slide" >
+                    <img src="./images/8_ucanbc.jpg" alt="university of canterbury hall"
+                </li>
+                <li class="slide">
+                    <img src="./images/2_ucanbc.jpg" alt="university of canterbury hall"
+                </li>
+                <li class="slide">
+                    <img src="./images/3_ucanbc.jpg" alt="university of canterbury hall"
+                </li>
+                <li class="slide">
+                    <img src="./images/4_ucanbc.jpg" alt="university of canterbury hall"
+                </li>
+                <li class="slide">
+                    <img src="./images/6_ucanbc.jpg" alt="university of canterbury hall"
+                </li>
+                <li class="slide">
+                    <img src="./images/7_ucanbc.jpg" alt="university of canterbury hall"
+                </li>
+            </ul>
         </div>
-        <div class="gallery-img img2">
-            <div><a href="'#'">This is a title</a></div>
-        </div>
-        <div class="gallery-img img3">
-            <div><a href="'#'">This is a title</a></div>
-        </div>
-        <div class="gallery-img img4">
-            <div><a href="'#'">This is a title</a></div>
-        </div>
-        <div class="gallery-img img5">
-            <div><a href="'#'">This is a title</a></div>
-        </div>
-        <div class="gallery-img img6">
-            <div><a href="'#'">This is a title</a></div>
-        </div>
-        <div class="gallery-img img7">
-            <div><a href="'#'">This is a title</a></div>
-        </div>
-
     </section>
 
-    <script src="./gallery.js"></script>
     <!-- <div class="faq-container">
         <div class="faq-content">
             <h1 class="faq-title" style="color:white;"> Media </h1>

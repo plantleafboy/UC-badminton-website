@@ -1,6 +1,13 @@
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
     /* www.penguins.co.nz */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+        scroll-behavior: smooth;
+  }
 }
 
 body {
